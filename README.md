@@ -6,7 +6,7 @@ Thiemoko yoro kone
 # Image de fond
 - 
 # Couleur
-- ??? 
+- ??? ?
 
 # Choix composant visuels
 - Drapeau Mali 

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="fenetre" prefHeight="743.0" prefWidth="1294.0" stylesheets="@decoration/jardinator.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox id="menu" layoutX="-7.0" layoutY="92.0" prefHeight="651.0" prefWidth="83.0" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="92.0">
+         <children>
+            <Button id="menu-amis" mnemonicParsing="false" prefHeight="76.0" prefWidth="91.0">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@decoration/menu/amis.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip text="Compagnonnage" />
+               </tooltip>
+            </Button>
+            <Button id="menu-numerique" mnemonicParsing="false" prefHeight="75.0" prefWidth="105.0">
+               <graphic>
+                  <ImageView fitHeight="37.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@decoration/menu/numerique.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip text="Avancement" />
+               </tooltip>
+            </Button>
+            <Button id="menu-date" layoutX="10.0" layoutY="238.0" mnemonicParsing="false" prefHeight="77.0" prefWidth="104.0">
+               <graphic>
+                  <ImageView id="menu-date" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@decoration/menu/date.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip text="Arrosage  (date)" />
+               </tooltip>
+            </Button>
+            <Button id="menu-chat" layoutX="10.0" layoutY="392.0" mnemonicParsing="false" prefHeight="77.0" prefWidth="104.0">
+               <graphic>
+                  <ImageView id="menu-argent" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@decoration/menu/chat.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip text="Commande (semis)" />
+               </tooltip>
+            </Button>
+         </children>
+      </VBox>
+      <AnchorPane id="espace-travail" layoutX="76.0" layoutY="92.0" prefHeight="651.0" prefWidth="1218.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="76.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="92.0">
+         <children>
+            <AnchorPane id="actions" layoutX="21.0" layoutY="23.0" prefHeight="119.0" prefWidth="462.0">
+               <children>
+                  <Button layoutX="20.0" layoutY="10.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="201.0" text="RECOMMENCER" textOverrun="CLIP" />
+                  <Button layoutX="20.0" layoutY="66.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="201.0" text="UNDO" textOverrun="CLIP" />
+                  <Button layoutX="237.0" layoutY="10.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="201.0" text="RANDOMISER" textOverrun="CLIP" />
+                  <Button layoutX="237.0" layoutY="66.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="201.0" text="REDO" textOverrun="CLIP" />
+               </children>
+            </AnchorPane>
+            <Pane layoutX="6.0" layoutY="150.0" prefHeight="501.0" prefWidth="1207.0">
+               <children>
+                  <Pane id="semis" layoutX="15.0" layoutY="11.0" prefHeight="468.0" prefWidth="462.0" />
+                  <GridPane id="semis-grille" layoutX="35.0" layoutY="26.0" prefHeight="436.0" prefWidth="414.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="109.0" minHeight="10.0" prefHeight="108.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="110.0" minHeight="10.0" prefHeight="110.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Button id="choisir-mali" fx:id="choisirCarotte" mnemonicParsing="false" prefHeight="119.0" prefWidth="106.0" textOverrun="CLIP">
+                           <graphic>
+                              <ImageView fitHeight="109.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@decoration/mali.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button id="choisir-canada" fx:id="choisirCanada" mnemonicParsing="false" prefHeight="119.0" prefWidth="108.0" textOverrun="CLIP" GridPane.columnIndex="1">
+                           <graphic>
+                              <ImageView fitHeight="101.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@decoration/canada.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button id="choisir-chine" fx:id="choisirChine" mnemonicParsing="false" prefHeight="140.0" prefWidth="106.0" textOverrun="CLIP" GridPane.columnIndex="2">
+                           <graphic>
+                              <ImageView fitHeight="109.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@decoration/chine.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button id="choisir-france" fx:id="choisirFrance" mnemonicParsing="false" prefHeight="119.0" prefWidth="108.0" textOverrun="CLIP" GridPane.columnIndex="3">
+                           <graphic>
+                              <ImageView fitHeight="83.0" fitWidth="82.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@decoration/france.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button mnemonicParsing="false" prefHeight="119.0" prefWidth="108.0" textOverrun="CLIP" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                        <Button mnemonicParsing="false" prefHeight="119.0" prefWidth="108.0" textOverrun="CLIP" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                     </children>
+                  </GridPane>
+                  <AnchorPane id="continant-cloture" fx:id="continantCloture" layoutX="493.0" layoutY="10.0" prefHeight="468.0" prefWidth="702.0">
+                     <children>
+                        <Rectangle id="jardin-terre" fx:id="jardinTerre" arcHeight="5.0" arcWidth="5.0" fill="#5b4f45" height="468.0" layoutY="-6.0" stroke="BLACK" strokeType="INSIDE" style="-fx-fill: transparent;" width="702.0" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </Pane>
+            <ImageView fitHeight="141.0" fitWidth="574.0" layoutX="568.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@decoration/ruban-vert.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Pane id="entete" layoutX="-6.0" layoutY="-7.0" prefHeight="98.0" prefWidth="1301.0" AnchorPane.leftAnchor="-6.0" AnchorPane.rightAnchor="-1.0">
+         <children>
+            <Label layoutX="429.0" layoutY="12.0" prefHeight="103.0" prefWidth="462.0" text="CONTINATOR" textFill="#fff7f7">
+               <font>
+                  <Font name="FreeMono" size="70.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="30.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@decoration/icone-liste.png" />
+               </image>
+            </ImageView>
+         </children>
+         <effect>
+            <DropShadow color="#7c7979" height="50.0" radius="24.5" width="50.0" />
+         </effect>
+      </Pane>
+   </children>
+</AnchorPane>

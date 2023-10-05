@@ -150,10 +150,10 @@
             </ImageView>
             <AnchorPane id="actions" layoutX="523.0" layoutY="70.0" prefHeight="78.0" prefWidth="671.0">
                <children>
-                  <Button id="choix-continent-afrique" fx:id="ChoixContinentAfrique" layoutX="-4.0" layoutY="18.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="151.0" text="Afrique" textOverrun="CLIP" />
-                  <Button id="choix-continent-europe" fx:id="ChoixContinentEurope" layoutX="166.0" layoutY="19.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="151.0" text="Europe" textOverrun="CLIP" />
-                  <Button id="choix-continent-amerique" fx:id="ChoixContinentAmerique" layoutX="336.0" layoutY="16.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="151.0" text="Amerique" textOverrun="CLIP" />
-                  <Button id="choix-continent-asie" fx:id="ChoixContinentAsie" layoutX="502.0" layoutY="16.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="151.0" text="Asie" textOverrun="CLIP" />
+                  <Button id="action-choix-continent-afrique" fx:id="actionChoixContinentAfrique" layoutX="-4.0" layoutY="18.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="151.0" text="Afrique" textOverrun="CLIP" />
+                  <Button id="action-choix-continent-europe" fx:id="actionChoixContinentEurope" layoutX="166.0" layoutY="19.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="151.0" text="Europe" textOverrun="CLIP" />
+                  <Button id="action-choix-continent-amerique" fx:id="actionChoixContinentAmerique" layoutX="336.0" layoutY="16.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="151.0" text="Amerique" textOverrun="CLIP" />
+                  <Button id="action-choix-continent-asie" fx:id="actionChoixContinentAsie" layoutX="502.0" layoutY="16.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="151.0" text="Asie" textOverrun="CLIP" />
                </children>
             </AnchorPane>
          </children>

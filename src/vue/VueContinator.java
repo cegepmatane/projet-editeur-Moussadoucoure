@@ -31,6 +31,7 @@ public class VueContinator extends Vue {
 	{
 		super.activerControles();
 		
+		
 		Button choisirMali = (Button) lookup("#choisir-mali");
 		choisirMali.setOnAction(new EventHandler<ActionEvent>() 
 		{
@@ -71,9 +72,64 @@ public class VueContinator extends Vue {
 				controleur.notifierClicContinant(x, y);
 				
 			}});
+		
+		
+		Button actionChoisirContinentAfrique = (Button)lookup("#action-choix-continent-afrique");
+	    //Button actionChoisirContinentEurope = (Button)lookup("#action-choisir-continent-europe");
+		//Button actionChoisirContinentAmerique = (Button)lookup("#action-choisir-continent-amerique");
+		//Button actionChoisirContinentAsie = (Button)lookup("#action-choisir-continent-asie");
+		
+		actionChoisirContinentAfrique.setOnAction(new EventHandler<ActionEvent>() {
+
+			@Override
+			public void handle(ActionEvent arg0) {
+				System.out.println("choisir le Continent Afrique");
+				afficherTerrain();
+				
+			}});
+		
+		
+		
+		/*actionChoisirContinentEurope.setOnAction(new EventHandler<ActionEvent>() {
+
+			@Override
+			public void handle(ActionEvent arg0) {
+				System.out.println("choisir le Continent europe");
+				afficherTerrain();
+				
+			}}); 
+		
+		 actionChoisirContinentAmerique.setOnAction(new EventHandler<ActionEvent>() {
+
+			@Override
+			public void handle(ActionEvent arg0) {
+				System.out.println("choisir le Continent Amerique");
+				afficherTerrain();
+				
+				
+			}});
+		 
+		 actionChoisirContinentAsie.setOnAction(new EventHandler<ActionEvent>(){
+
+			@Override
+			public void handle(ActionEvent arg0) {
+				System.out.println("choisir le Continent Asie");
+				afficherTerrain();
+				
+			}});*/
+	
+		
+	}
+	
+	
+	public void afficherTerrain()
+	{
+		System.out.println("Vuecontinentor.afficherTerrain()");
+		AnchorPane cloture = (AnchorPane)lookup("#continant-cloture");
+		System.out.println(cloture);
+		cloture.setStyle("-fx-background-image:url('vue/decoration/afrique.png');");
 	}
 	 // decouvrir d'autres pays
-
 	public void decouvrirPays(PAYS paysChoisi, double x, double y) 
 	{
 		

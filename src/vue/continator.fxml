@@ -143,11 +143,19 @@
                   </AnchorPane>
                </children>
             </Pane>
-            <ImageView fitHeight="141.0" fitWidth="574.0" layoutX="568.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="59.0" fitWidth="390.0" layoutX="683.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@decoration/ruban-vert.png" />
                </image>
             </ImageView>
+            <AnchorPane id="actions" layoutX="523.0" layoutY="70.0" prefHeight="78.0" prefWidth="671.0">
+               <children>
+                  <Button id="choix-continent-afrique" fx:id="ChoixContinentAfrique" layoutX="-4.0" layoutY="18.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="151.0" text="Afrique" textOverrun="CLIP" />
+                  <Button id="choix-continent-europe" fx:id="ChoixContinentEurope" layoutX="166.0" layoutY="19.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="151.0" text="Europe" textOverrun="CLIP" />
+                  <Button id="choix-continent-amerique" fx:id="ChoixContinentAmerique" layoutX="336.0" layoutY="16.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="151.0" text="Amerique" textOverrun="CLIP" />
+                  <Button id="choix-continent-asie" fx:id="ChoixContinentAsie" layoutX="502.0" layoutY="16.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="151.0" text="Asie" textOverrun="CLIP" />
+               </children>
+            </AnchorPane>
          </children>
       </AnchorPane>
       <Pane id="entete" layoutX="-6.0" layoutY="-7.0" prefHeight="98.0" prefWidth="1301.0" AnchorPane.leftAnchor="-6.0" AnchorPane.rightAnchor="-1.0">

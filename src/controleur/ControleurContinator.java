@@ -23,11 +23,13 @@ public class ControleurContinator extends Controleur{
 
 	public void notifierChoixPays (PAYS pays)
 	{
+		
 		this.paysChoisi = pays;
 	}
 
-	
-	
+	public void notifierChoixPays(int numeroPays) {
+		VueContinator.getInstance().afficherPays(numeroPays);
+	}
 	
 	public void notifierClicContinant(double x, double y)
 	{	

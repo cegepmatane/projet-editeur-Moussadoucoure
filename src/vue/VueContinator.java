@@ -75,36 +75,37 @@ public class VueContinator extends Vue {
 		
 		
 		Button actionChoisirContinentAfrique = (Button)lookup("#action-choix-continent-afrique");
-	    //Button actionChoisirContinentEurope = (Button)lookup("#action-choisir-continent-europe");
-		//Button actionChoisirContinentAmerique = (Button)lookup("#action-choisir-continent-amerique");
-		//Button actionChoisirContinentAsie = (Button)lookup("#action-choisir-continent-asie");
+	    Button actionChoisirContinentEurope = (Button)lookup("#action-choix-continent-europe");
+		Button actionChoisirContinentAmerique = (Button)lookup("#action-choix-continent-amerique");
+		Button actionChoisirContinentAsie = (Button)lookup("#action-choix-continent-asie");
 		
 		actionChoisirContinentAfrique.setOnAction(new EventHandler<ActionEvent>() {
 
 			@Override
 			public void handle(ActionEvent arg0) {
 				System.out.println("choisir le Continent Afrique");
-				afficherPays();
+				controleur.notifierChoixPays(1);
 				
 			}});
 		
 		
 		
-		/*actionChoisirContinentEurope.setOnAction(new EventHandler<ActionEvent>() {
+		actionChoisirContinentEurope.setOnAction(new EventHandler<ActionEvent>() {
 
 			@Override
 			public void handle(ActionEvent arg0) {
 				System.out.println("choisir le Continent europe");
-				afficherPays();
+				controleur.notifierChoixPays(2);
 				
-			}}); 
+			}});
+
 		
 		 actionChoisirContinentAmerique.setOnAction(new EventHandler<ActionEvent>() {
 
 			@Override
 			public void handle(ActionEvent arg0) {
 				System.out.println("choisir le Continent Amerique");
-				afficherPays();
+				controleur.notifierChoixPays(3);;
 				
 				
 			}});
@@ -114,20 +115,38 @@ public class VueContinator extends Vue {
 			@Override
 			public void handle(ActionEvent arg0) {
 				System.out.println("choisir le Continent Asie");
-				afficherPays();
+				controleur.notifierChoixPays(4);;
 				
-			}});*/
+			}});
 	
 		
 	}
 	
 	
-	public void afficherPays()
+	public void afficherPays(int numeroPays)
 	{
 		System.out.println("Vuecontinentor.afficherTerrain()");
 		AnchorPane cloture = (AnchorPane)lookup("#continant-cloture");
 		System.out.println(cloture);
-		cloture.setStyle("-fx-background-image:url('vue/decoration/afrique2.png');");
+		switch(numeroPays)
+		{
+		case 1:// afrique
+			cloture.setStyle("-fx-background-image:url('vue/decoration/afrique2.png');");
+			break;
+		case 2: // europe
+			cloture.setStyle("-fx-background-image:url('vue/decoration/europe2.jpg');");
+			break;
+		case 3: // amerique
+			cloture.setStyle("-fx-background-image:url('vue/decoration/afrique2.png');");
+			break;
+		case 4: // amerique
+			cloture.setStyle("-fx-background-image:url('vue/decoration/afrique2.png');");
+			break;
+		default:
+			cloture.setStyle("-fx-background-image:url('vue/decoration/terrain.png');");
+		break;
+			
+		}
 	}
 	 // decouvrir d'autres pays
 	public void decouvrirPays(PAYS paysChoisi, double x, double y) 

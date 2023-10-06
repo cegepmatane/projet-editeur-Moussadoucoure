@@ -84,7 +84,7 @@ public class VueContinator extends Vue {
 			@Override
 			public void handle(ActionEvent arg0) {
 				System.out.println("choisir le Continent Afrique");
-				afficherTerrain();
+				afficherPays();
 				
 			}});
 		
@@ -95,7 +95,7 @@ public class VueContinator extends Vue {
 			@Override
 			public void handle(ActionEvent arg0) {
 				System.out.println("choisir le Continent europe");
-				afficherTerrain();
+				afficherPays();
 				
 			}}); 
 		
@@ -104,7 +104,7 @@ public class VueContinator extends Vue {
 			@Override
 			public void handle(ActionEvent arg0) {
 				System.out.println("choisir le Continent Amerique");
-				afficherTerrain();
+				afficherPays();
 				
 				
 			}});
@@ -114,7 +114,7 @@ public class VueContinator extends Vue {
 			@Override
 			public void handle(ActionEvent arg0) {
 				System.out.println("choisir le Continent Asie");
-				afficherTerrain();
+				afficherPays();
 				
 			}});*/
 	
@@ -122,12 +122,12 @@ public class VueContinator extends Vue {
 	}
 	
 	
-	public void afficherTerrain()
+	public void afficherPays()
 	{
 		System.out.println("Vuecontinentor.afficherTerrain()");
 		AnchorPane cloture = (AnchorPane)lookup("#continant-cloture");
 		System.out.println(cloture);
-		cloture.setStyle("-fx-background-image:url('vue/decoration/afrique.png');");
+		cloture.setStyle("-fx-background-image:url('vue/decoration/afrique2.png');");
 	}
 	 // decouvrir d'autres pays
 	public void decouvrirPays(PAYS paysChoisi, double x, double y) 

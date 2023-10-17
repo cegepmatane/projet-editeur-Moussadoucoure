@@ -169,7 +169,7 @@ public class VueContinator extends Vue {
 		paysDecouvert.setX(x - 15);
 		paysDecouvert.setY(y - 50);
 		
-		AnchorPane cloture = (AnchorPane) lookup("#jardin-cloture");
+		AnchorPane cloture = (AnchorPane) lookup("#continant-cloture");
 		cloture.getChildren().add(paysDecouvert);
 		
 	}

@@ -131,7 +131,7 @@ public class VueContinator extends Vue {
 		switch(numeroPays)
 		{
 		case 1:// afrique
-			cloture.setStyle("-fx-background-image:url('vue/decoration/afrique2.png');");
+			cloture.setStyle("-fx-background-image:url('vue/decoration/maliCarte.png');");
 			break;
 		case 2: // europe
 			cloture.setStyle("-fx-background-image:url('vue/decoration/europe2.jpg');");
@@ -156,7 +156,7 @@ public class VueContinator extends Vue {
 		ImageView paysDecouvert = new ImageView();
 		if(paysChoisi == PAYS.MALI) 
 		{
-			paysDecouvert.setImage(new Image("vue/decoration/mali.png"));
+			paysDecouvert.setImage(new Image("vue/decoration/drapeau_mali.png"));
 		}
 
 		if(paysChoisi == PAYS.CANADA)

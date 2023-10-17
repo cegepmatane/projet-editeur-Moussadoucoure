@@ -100,7 +100,7 @@
                            <graphic>
                               <ImageView fitHeight="109.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@decoration/mali.png" />
+                                    <Image url="@decoration/drapeau_mali.png" />
                                  </image>
                               </ImageView>
                            </graphic>

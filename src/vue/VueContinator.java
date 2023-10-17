@@ -139,7 +139,7 @@ public class VueContinator extends Vue {
 		case 3: // amerique
 			cloture.setStyle("-fx-background-image:url('vue/decoration/afrique2.png');");
 			break;
-		case 4: // amerique
+		case 4: // asie
 			cloture.setStyle("-fx-background-image:url('vue/decoration/afrique2.png');");
 			break;
 		default:

@@ -56,7 +56,7 @@ public class VueContinator extends Vue {
 				
 			}});
 		
-		Rectangle jardin = (Rectangle) lookup("#jardin-terre");
+		Rectangle jardin = (Rectangle) lookup("#afrique");
 		jardin.setOnMouseClicked(new EventHandler<MouseEvent>() {
 
 			@Override
@@ -126,7 +126,7 @@ public class VueContinator extends Vue {
 	public void afficherPays(int numeroPays)
 	{
 		System.out.println("Vuecontinentor.afficherTerrain()");
-		AnchorPane cloture = (AnchorPane)lookup("#continant-cloture");
+		AnchorPane cloture = (AnchorPane)lookup("#continant");
 		System.out.println(cloture);
 		switch(numeroPays)
 		{
@@ -169,7 +169,7 @@ public class VueContinator extends Vue {
 		paysDecouvert.setX(x - 15);
 		paysDecouvert.setY(y - 50);
 		
-		AnchorPane cloture = (AnchorPane) lookup("#continant-cloture");
+		AnchorPane cloture = (AnchorPane) lookup("#continant");
 		cloture.getChildren().add(paysDecouvert);
 		
 	}

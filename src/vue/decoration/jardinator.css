@@ -83,10 +83,10 @@ https://all-free-download.com/free-vector/download/clover-ribbon-vector_163196.h
     -fx-cursor:hand;
 }
 
-#jardin-cloture
+#continant
 {
     //-fx-background-color:#835629;
-    -fx-background-image:url('terre.png');
+    -fx-background-image:url('terrain/terrain.png');
     -fx-background-radius:30;
     //-fx-border-color:black;
     //-fx-border-radius:30;
@@ -103,6 +103,19 @@ https://all-free-download.com/free-vector/download/clover-ribbon-vector_163196.h
     -fx-cursor: hand;
 }
 #actions Button:hover
+{
+    -fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #24a33b, #2a81a3);    
+}
+
+Button.action-choisir-pays
+{
+    -fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #40ff63, #40c9ff);
+    -fx-text-fill: white;
+    -fx-font-weight: bold; 
+    -fx-font-size:20px;
+    -fx-cursor: hand;
+}
+Button.action-choisir-pays:hover
 {
     -fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #24a33b, #2a81a3);    
 }

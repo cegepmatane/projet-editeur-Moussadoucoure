@@ -143,7 +143,7 @@ public class VueContinator extends Vue {
 			cloture.setStyle("-fx-background-image:url('vue/decoration/afrique2.png');");
 			break;
 		default:
-			cloture.setStyle("-fx-background-image:url('vue/decoration/terrain.png');");
+			cloture.setStyle("-fx-background-image:url('vue/decoration/terre.png');");
 		break;
 			
 		}

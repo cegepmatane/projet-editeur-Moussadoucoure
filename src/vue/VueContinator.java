@@ -156,7 +156,7 @@ public class VueContinator extends Vue {
 		ImageView paysDecouvert = new ImageView();
 		if(paysChoisi == PAYS.MALI) 
 		{
-			paysDecouvert.setImage(new Image("vue/decoration/drapeau_mali.png"));
+			paysDecouvert.setImage(new Image("vue/decoration/drapeau.png"));
 		}
 
 		if(paysChoisi == PAYS.CANADA)

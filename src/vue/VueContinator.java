@@ -68,7 +68,7 @@ public class VueContinator extends Vue {
 				
 			}});
 		
-		/*Button choisirAllemagne = (Button) lookup("#choisir-allemagne");
+		Button choisirAllemagne = (Button) lookup("#choisir-allemagne");
 		choisirAllemagne.setOnAction(new EventHandler<ActionEvent>() 
 		{
             
@@ -78,7 +78,7 @@ public class VueContinator extends Vue {
 				System.out.println("Clic choisir Allemagne");
 				controleur.notifierChoixPays(Pays.PAYS.ALLEMAGNE);
 				
-			}});*/
+			}});
 		
 		Rectangle jardin = (Rectangle) lookup("#afrique");
 		jardin.setOnMouseClicked(new EventHandler<MouseEvent>() {
@@ -158,13 +158,13 @@ public class VueContinator extends Vue {
 			cloture.setStyle("-fx-background-image:url('vue/decoration/maliCarte.png');");
 			break;
 		case 2: // europe
-			cloture.setStyle("-fx-background-image:url('vue/decoration/europe2.jpg');");
+			cloture.setStyle("-fx-background-image:url('vue/decoration/cartecanada.png');");
 			break;
 		case 3: // amerique
-			cloture.setStyle("-fx-background-image:url('vue/decoration/afrique2.png');");
+			cloture.setStyle("-fx-background-image:url('vue/decoration/cartechine.png');");
 			break;
 		case 4: // asie
-			cloture.setStyle("-fx-background-image:url('vue/decoration/afrique2.png');");
+			cloture.setStyle("-fx-background-image:url('vue/decoration/carteallemagne.jpg');");
 			break;
 		default:
 			cloture.setStyle("-fx-background-image:url('vue/decoration/terre.png');");
@@ -195,7 +195,7 @@ public class VueContinator extends Vue {
 		
 		if(paysChoisi == PAYS.ALLEMAGNE)
 		{
-			paysDecouvert.setImage(new Image("vue/decoration/canada.png"));
+			paysDecouvert.setImage(new Image("vue/decoration/drapeauAllemagne.png"));
 		}
 		
 		paysDecouvert.setPreserveRatio(true);

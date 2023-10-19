@@ -96,7 +96,7 @@
                            <graphic>
                               <ImageView fitHeight="109.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@decoration/canada.png" />
+                                    <Image url="@decoration/CanadaFlag.png" />
                                  </image>
                               </ImageView>
                            </graphic>
@@ -110,11 +110,11 @@
                               </ImageView>
                            </graphic>
                         </Button>
-                        <Button id="choisir-allemangne" fx:id="choisirAllemangne" mnemonicParsing="false" prefHeight="160.0" prefWidth="150.0" textOverrun="CLIP">
+                        <Button id="choisir-allemagne" fx:id="choisirAllemangne" mnemonicParsing="false" prefHeight="160.0" prefWidth="150.0" textOverrun="CLIP">
                            <graphic>
                               <ImageView fitHeight="101.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@decoration/semis/radis.png" />
+                                    <Image url="@decoration/drapeauAllemagne.png" />
                                  </image>
                               </ImageView>
                            </graphic>

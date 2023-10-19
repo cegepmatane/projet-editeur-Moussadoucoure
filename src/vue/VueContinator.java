@@ -68,7 +68,7 @@ public class VueContinator extends Vue {
 				
 			}});
 		
-		Button choisirAllemagne = (Button) lookup("#choisir-allemagne");
+		/*Button choisirAllemagne = (Button) lookup("#choisir-allemagne");
 		choisirAllemagne.setOnAction(new EventHandler<ActionEvent>() 
 		{
             
@@ -78,7 +78,7 @@ public class VueContinator extends Vue {
 				System.out.println("Clic choisir Allemagne");
 				controleur.notifierChoixPays(Pays.PAYS.ALLEMAGNE);
 				
-			}});
+			}});*/
 		
 		Rectangle jardin = (Rectangle) lookup("#afrique");
 		jardin.setOnMouseClicked(new EventHandler<MouseEvent>() {

@@ -2,7 +2,7 @@ package modele;
 
 public class Pays {
 
-	public enum PAYS {MALI, CANADA, CHINE, FRANCE}
+	public enum PAYS {MALI, CANADA, CHINE, ALLEMAGNE}
 	
 	protected PAYS pays;
 	

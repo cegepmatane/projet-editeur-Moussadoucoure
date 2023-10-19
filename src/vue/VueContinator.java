@@ -56,6 +56,30 @@ public class VueContinator extends Vue {
 				
 			}});
 		
+		Button choisirChine = (Button) lookup("#choisir-chine");
+		choisirChine.setOnAction(new EventHandler<ActionEvent>() 
+		{
+            
+			@Override
+			public void handle(ActionEvent e) {
+				
+				System.out.println("Clic choisir Chine");
+				controleur.notifierChoixPays(Pays.PAYS.CHINE);
+				
+			}});
+		
+		Button choisirAllemagne = (Button) lookup("#choisir-allemagne");
+		choisirAllemagne.setOnAction(new EventHandler<ActionEvent>() 
+		{
+            
+			@Override
+			public void handle(ActionEvent e) {
+				
+				System.out.println("Clic choisir Allemagne");
+				controleur.notifierChoixPays(Pays.PAYS.ALLEMAGNE);
+				
+			}});
+		
 		Rectangle jardin = (Rectangle) lookup("#afrique");
 		jardin.setOnMouseClicked(new EventHandler<MouseEvent>() {
 
@@ -162,6 +186,16 @@ public class VueContinator extends Vue {
 		if(paysChoisi == PAYS.CANADA)
 		{
 			paysDecouvert.setImage(new Image("vue/decoration/CanadaFlag.png"));
+		}
+		
+		if(paysChoisi == PAYS.CHINE)
+		{
+			paysDecouvert.setImage(new Image("vue/decoration/drapeauChine.png"));
+		}
+		
+		if(paysChoisi == PAYS.ALLEMAGNE)
+		{
+			paysDecouvert.setImage(new Image("vue/decoration/canada.png"));
 		}
 		
 		paysDecouvert.setPreserveRatio(true);

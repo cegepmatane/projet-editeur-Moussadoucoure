@@ -101,16 +101,16 @@
                               </ImageView>
                            </graphic>
                         </Button>
-                        <Button id="choisir-congo" fx:id="choisirCongo" mnemonicParsing="false" prefHeight="160.0" prefWidth="150.0" textOverrun="CLIP">
+                        <Button id="choisir-chine" fx:id="choisirChine" mnemonicParsing="false" prefHeight="160.0" prefWidth="150.0" textOverrun="CLIP">
                            <graphic>
                               <ImageView fitHeight="83.0" fitWidth="82.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@decoration/semis/oignon.png" />
+                                    <Image url="@decoration/drapeauChine.png" />
                                  </image>
                               </ImageView>
                            </graphic>
                         </Button>
-                        <Button id="choisir-afrique-sud" fx:id="choisirAfriqueSud" mnemonicParsing="false" prefHeight="160.0" prefWidth="150.0" textOverrun="CLIP">
+                        <Button id="choisir-allemangne" fx:id="choisirAllemangne" mnemonicParsing="false" prefHeight="160.0" prefWidth="150.0" textOverrun="CLIP">
                            <graphic>
                               <ImageView fitHeight="101.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true">
                                  <image>

@@ -161,7 +161,7 @@ public class VueContinator extends Vue {
 
 		if(paysChoisi == PAYS.CANADA)
 		{
-			paysDecouvert.setImage(new Image("vue/decoration/canada.png"));
+			paysDecouvert.setImage(new Image("vue/decoration/CanadaFlag.png"));
 		}
 		
 		paysDecouvert.setPreserveRatio(true);

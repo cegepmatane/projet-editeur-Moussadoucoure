@@ -1,5 +1,8 @@
 package controleur;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import com.sun.media.jfxmedia.logging.Logger;
 
 import architecture.Controleur;
@@ -11,9 +14,11 @@ public class ControleurContinator extends Controleur{
 	
 	private Pays.PAYS paysChoisi;
 
+	private List<Pays> paysContinent = null;
 	public ControleurContinator()
 	{
 		Logger.logMsg(Logger.INFO, "new ControleurJardinator()");
+		this.paysContinent = new ArrayList<Pays>();
 	}
 	
 	public void initialiser()
@@ -27,12 +32,15 @@ public class ControleurContinator extends Controleur{
 		this.paysChoisi = pays;
 	}
 
-	public void notifierChoixPays(int numeroPays) {
+	public void notifierChoixPays(int numeroPays)  
+	 {
 		VueContinator.getInstance().afficherPays(numeroPays);
 	}
 	
 	public void notifierClicContinant(double x, double y)
 	{	
 		VueContinator.getInstance().decouvrirPays(this.paysChoisi, x, y);
+		Pays pays = new Pays(this.paysChoisi, x,y);
+		this.paysContinent.add(pays);
 	}
 }

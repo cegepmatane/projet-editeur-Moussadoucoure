@@ -4,6 +4,7 @@ import com.sun.media.jfxmedia.logging.Logger;
 import architecture.Vue;
 import controleur.ControleurContinator;
 import javafx.event.ActionEvent;
+import javafx.event.Event;
 import javafx.event.EventHandler;
 import javafx.scene.control.Button;
 import javafx.scene.image.Image;
@@ -99,11 +100,24 @@ public class VueContinator extends Vue {
 			}});
 		
 		
+		
 		Button actionChoisirContinentAfriqueOuest= (Button)lookup("#action-choix-continent-afrique-ouest");
 	    Button actionChoisirContinentAfriqueEst = (Button)lookup("#action-choix-continent-afrique-est");
 		Button actionChoisirContinentAfriqueSud = (Button)lookup("#action-choix-continent-afrique-sud");
 		Button actionChoisirContinentAfriqueNord = (Button)lookup("#action-choix-continent-afrique-nord");
+		Button actionSauvegarder = (Button)lookup("#action-sauvegarder");
 		
+		actionSauvegarder.setOnAction(new EventHandler<ActionEvent>(){
+
+			@Override
+			public void handle(ActionEvent e) {
+				System.out.println("Actoin de choisir");
+				controleur.notifierSauvegarder();
+				
+			}});
+
+		
+
 		actionChoisirContinentAfriqueOuest.setOnAction(new EventHandler<ActionEvent>() {
 
 			@Override

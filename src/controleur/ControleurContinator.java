@@ -53,4 +53,12 @@ public class ControleurContinator extends Controleur{
 		Pays pays = new Pays(this.paysChoisi, x,y);
 		this.paysContinent.add(pays);
 	}
+	
+	public void notifierSauvegarder() 
+	{
+		System.out.println("ControleurContinator.notifierSauvegarder()");
+		Exporteur exporteur = new Exporteur();
+		exporteur.sauvegarder(paysContinent);
+
+	}
 }

@@ -16,6 +16,7 @@ import modele.Pays.PAYS;
 
 public class VueContinator extends Vue {
 
+	
 	protected ControleurContinator controleur;
 	protected static VueContinator instance = null; 
 	public static VueContinator getInstance() {if(null==instance)instance = new VueContinator();return VueContinator.instance;}; 

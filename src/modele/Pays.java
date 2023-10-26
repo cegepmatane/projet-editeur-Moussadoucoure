@@ -1,7 +1,7 @@
 package modele;
 
 import donnee.Exportable;
-public class Pays {
+public class Pays implements Exportable{
 
 	public enum PAYS {MALI, CANADA, CHINE, ALLEMAGNE}
 	

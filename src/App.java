@@ -12,10 +12,10 @@ import vue.VueContinator;
 public class App {
 
 	public static void main(String[] parametres) {
-		//Controleur.choisirVuePrincipale(VueContinator.class);
-		//Fenetre.launch(Fenetre.class, parametres);	
+		Controleur.choisirVuePrincipale(VueContinator.class);
+		Fenetre.launch(Fenetre.class, parametres);	
 		
-		Pays paysA = new Pays(Pays.PAYS.CHINE, 4, 7);
+		/*Pays paysA = new Pays(Pays.PAYS.CHINE, 4, 7);
 		Pays paysB = new Pays(Pays.PAYS.MALI, 10, 10);
 		Pays paysC = new Pays(Pays.PAYS.CANADA, 200, 200);
 		List<Exportable> paysContinent = new ArrayList<Exportable>();
@@ -25,7 +25,7 @@ public class App {
 
 		Exporteur exporteur = new Exporteur();
 		exporteur. sauvegarder(paysContinent);
-		
+		*/
 	}
 
 }

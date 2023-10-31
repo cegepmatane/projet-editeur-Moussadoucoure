@@ -13,6 +13,7 @@ public class Continent implements Exportable{
 	public enum DRAPEAU {Mali, Canada, Allemagne, Chine}
 	protected DRAPEAU drapeau;
 	
+	
 	public DRAPEAU getDrapeau() {
 		return drapeau;
 	}
@@ -38,10 +39,13 @@ public class Continent implements Exportable{
 	@Override
 	public String exporterXML() {
 		String xml = "";
+		xml += "<drapeau>" + this.drapeau + "</drapeau>";
+		xml += "<pays>";
 		for(Pays pays:this.paysContinent)
 		{
 			xml+=pays.exporterXML();
 		}
+		xml += "</pays>";
 		return  "<continent>" + xml + "</continent>";
 	}
 

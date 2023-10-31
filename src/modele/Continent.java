@@ -3,12 +3,23 @@ package modele;
 import java.util.ArrayList;
 import java.util.List;
 
+
 import donnee.Exportable;
 
 public class Continent implements Exportable{
 	
 	protected List<Pays> paysContinent;
 	
+	public enum DRAPEAU {Mali, Canada, Allemagne, Chine}
+	protected DRAPEAU drapeau;
+	
+	public DRAPEAU getDrapeau() {
+		return drapeau;
+	}
+
+	public void setDrapeau(DRAPEAU drapeau) {
+		this.drapeau = drapeau;
+	}
 	public Continent() {
 		this.paysContinent=new ArrayList<Pays>();
 	}

@@ -12,6 +12,8 @@ import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.shape.Rectangle;
+import modele.Continent;
+import modele.Continent.DRAPEAU;
 import modele.Pays;
 import modele.Pays.PAYS;
 
@@ -123,7 +125,7 @@ public class VueContinator extends Vue {
 			@Override
 			public void handle(ActionEvent arg0) {
 				System.out.println("choisir le Continent Afrique de l'ouest");
-				controleur.notifierChoixPays(1);
+				controleur.notifierChoixDrapeau(Continent.DRAPEAU.Mali);
 				
 			}});
 		
@@ -134,7 +136,7 @@ public class VueContinator extends Vue {
 			@Override
 			public void handle(ActionEvent arg0) {
 				System.out.println("choisir le Continent Afrique de l'est");
-				controleur.notifierChoixPays(2);
+				controleur.notifierChoixDrapeau(Continent.DRAPEAU.Canada);
 				
 			}});
 
@@ -144,7 +146,7 @@ public class VueContinator extends Vue {
 			@Override
 			public void handle(ActionEvent arg0) {
 				System.out.println("choisir le Continent Afrique du Sud ");
-				controleur.notifierChoixPays(3);;
+				controleur.notifierChoixDrapeau(Continent.DRAPEAU.Chine);
 				
 				
 			}});
@@ -154,7 +156,7 @@ public class VueContinator extends Vue {
 			@Override
 			public void handle(ActionEvent arg0) {
 				System.out.println("choisir le Continent Afrique du Nord");
-				controleur.notifierChoixPays(4);;
+				controleur.notifierChoixDrapeau(Continent.DRAPEAU.Allemagne);
 				
 			}});
 	
@@ -162,23 +164,23 @@ public class VueContinator extends Vue {
 	}
 	
 	
-	public void afficherPays(int numeroPays)
+	public void afficherPays(DRAPEAU drapeau)
 	{
 		System.out.println("Vuecontinentor.afficherTerrain()");
 		AnchorPane cloture = (AnchorPane)lookup("#continant");
 		System.out.println(cloture);
-		switch(numeroPays)
+		switch(drapeau)
 		{
-		case 1:// afrique
+		case Mali:// afrique
 			cloture.setStyle("-fx-background-image:url('vue/decoration/maliCarte.png');");
 			break;
-		case 2: // europe
+		case Canada: // europe
 			cloture.setStyle("-fx-background-image:url('vue/decoration/cartecanada.png');");
 			break;
-		case 3: // amerique
+		case Chine: // amerique
 			cloture.setStyle("-fx-background-image:url('vue/decoration/cartechine.png');");
 			break;
-		case 4: // asie
+		case Allemagne: // asie
 			cloture.setStyle("-fx-background-image:url('vue/decoration/carteallemagne.jpg');");
 			break;
 		default:

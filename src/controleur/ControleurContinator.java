@@ -39,11 +39,13 @@ public class ControleurContinator extends Controleur{
 		this.paysChoisi = pays;
 	}
 
-	public void notifierChoixPays(int numeroPays)  
+	public void notifierChoixDrapeau(Continent.DRAPEAU drapeau)  
 	 {
-		System.out.println("ControleurContinator.notifierChoixPays()");
-		VueContinator.getInstance().afficherPays(numeroPays);
-		Exporteur exporteur = new Exporteur();
+		System.out.println("ControleurContinator.notifierChoixDrapeau()");
+		VueContinator.getInstance().afficherPays(drapeau);
+		this.continent.setDrapeau(drapeau);
+		
+		//Exporteur exporteur = new Exporteur();
 		//exporteur.sauvegarder(paysContinent);
 		
 	}

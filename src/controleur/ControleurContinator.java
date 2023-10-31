@@ -8,21 +8,24 @@ import com.sun.media.jfxmedia.logging.Logger;
 import architecture.Controleur;
 import donnee.Exportable;
 import donnee.Exporteur;
+import modele.Continent;
 import modele.Pays;
 import modele.Pays.PAYS;
 import vue.VueContinator;
 
 public class ControleurContinator extends Controleur{
 	
+
 	private Pays.PAYS paysChoisi;
 
-	private List<Exportable> paysContinent = null;
+	//private List<Exportable> paysContinent = null;
+	
+	private Continent continent = new Continent(); 
 	
 	public ControleurContinator()
 	{
 		Logger.logMsg(Logger.INFO, "new ControleurJardinator()");
-		this.paysContinent = new ArrayList<Exportable>();
-		
+				
 	}
 	
 	public void initialiser()
@@ -41,7 +44,7 @@ public class ControleurContinator extends Controleur{
 		System.out.println("ControleurContinator.notifierChoixPays()");
 		VueContinator.getInstance().afficherPays(numeroPays);
 		Exporteur exporteur = new Exporteur();
-		exporteur.sauvegarder(paysContinent);
+		//exporteur.sauvegarder(paysContinent);
 		
 	}
 	
@@ -49,16 +52,15 @@ public class ControleurContinator extends Controleur{
 	{	
 		System.out.println("ControleurContinator.notifierClicContinant()");
 		VueContinator.getInstance().decouvrirPays(this.paysChoisi, x, y);
-		
 		Pays pays = new Pays(this.paysChoisi, x,y);
-		this.paysContinent.add(pays);
+		this.continent.ajouterPays(pays);
 	}
 	
 	public void notifierSauvegarder() 
 	{
 		System.out.println("ControleurContinator.notifierSauvegarder()");
 		Exporteur exporteur = new Exporteur();
-		exporteur.sauvegarder(paysContinent);
-
+		//exporteur.sauvegarder(paysContinent);
+		exporteur.sauvegarder(continent);
 	}
 }

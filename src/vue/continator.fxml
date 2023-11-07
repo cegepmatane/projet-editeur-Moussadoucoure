@@ -146,7 +146,7 @@
                      </HBox.margin>
                   </Button>
                   <Button id="action-choix-continent-chine" fx:id="choixTerrainRang" mnemonicParsing="false" prefHeight="43.0" prefWidth="165.0" styleClass="action-choisir-pays" text="Chine" textFill="WHITE" />
-                  <Button id="action-choix-continent-chine" fx:id="choixTerrainBacs" mnemonicParsing="false" prefHeight="43.0" prefWidth="166.0" styleClass="action-choisir-pays" text="Allemagne" textFill="WHITE" />
+                  <Button id="action-choix-continent-allemagne" fx:id="choixTerrainBacs" mnemonicParsing="false" prefHeight="43.0" prefWidth="166.0" styleClass="action-choisir-pays" text="Allemagne" textFill="WHITE" />
                </children>
             </HBox>
          </children>

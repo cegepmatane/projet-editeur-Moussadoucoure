@@ -135,18 +135,18 @@
             </ImageView>
             <HBox id="choix-pays" fx:id="choixTerrain" layoutX="497.0" layoutY="23.0" prefHeight="43.0" prefWidth="702.0" spacing="10.0">
                <children>
-                  <Button id="action-choix-continent-afrique-ouest" fx:id="choixTerrainTerre" mnemonicParsing="false" prefHeight="43.0" prefWidth="170.0" styleClass="action-choisir-pays" text="Ouest" textFill="WHITE">
+                  <Button id="action-choix-continent-mali" fx:id="choixTerrainTerre" mnemonicParsing="false" prefHeight="43.0" prefWidth="170.0" styleClass="action-choisir-pays" text="Mali" textFill="WHITE">
                      <HBox.margin>
                         <Insets />
                      </HBox.margin>
                   </Button>
-                  <Button id="action-choix-continent-afrique-est" fx:id="choixTerrainEnclos" mnemonicParsing="false" prefHeight="43.0" prefWidth="174.0" styleClass="action-choisir-pays" text="Est" textFill="WHITE">
+                  <Button id="action-choix-continent-canada" fx:id="choixTerrainEnclos" mnemonicParsing="false" prefHeight="43.0" prefWidth="174.0" styleClass="action-choisir-pays" text="Canada" textFill="WHITE">
                      <HBox.margin>
                         <Insets />
                      </HBox.margin>
                   </Button>
-                  <Button id="action-choix-continent-afrique-sud" fx:id="choixTerrainRang" mnemonicParsing="false" prefHeight="43.0" prefWidth="165.0" styleClass="action-choisir-pays" text="Nord" textFill="WHITE" />
-                  <Button id="action-choix-continent-afrique-nord" fx:id="choixTerrainBacs" mnemonicParsing="false" prefHeight="43.0" prefWidth="166.0" styleClass="action-choisir-pays" text="Sud" textFill="WHITE" />
+                  <Button id="action-choix-continent-chine" fx:id="choixTerrainRang" mnemonicParsing="false" prefHeight="43.0" prefWidth="165.0" styleClass="action-choisir-pays" text="Chine" textFill="WHITE" />
+                  <Button id="action-choix-continent-chine" fx:id="choixTerrainBacs" mnemonicParsing="false" prefHeight="43.0" prefWidth="166.0" styleClass="action-choisir-pays" text="Allemagne" textFill="WHITE" />
                </children>
             </HBox>
          </children>
